@@ -49,12 +49,12 @@ To set up your python environment to run the code in this repository, follow the
 	activate drlnd
 	```
 	
-2. Follow the instructions in [this repository](https://github.com/openai/gym) to perform a minimal install of OpenAI gym.  
-	- Install the **box2d** environment group by following the instructions [here](https://github.com/openai/gym#box2d).
+2. ~~Follow the instructions in [this repository](https://github.com/openai/gym) to perform a minimal install of OpenAI gym.  
+	- Install the **box2d** environment group by following the instructions [here](https://github.com/openai/gym#box2d).~~
 	
 3. Clone the repository (if you haven't already!), and navigate to the `python/` folder.  Then, install several dependencies.
 ```bash
-git clone https://github.com/udacity/Value-based-methods.git
+git clone https://github.com/willembressers/Value-based-methods.git
 cd Value-based-methods/python
 pip install .
 ```
@@ -62,6 +62,11 @@ pip install .
 4. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `drlnd` environment.  
 ```bash
 python -m ipykernel install --user --name drlnd --display-name "drlnd"
+```
+Start the notebook
+```bash
+cd ..
+jupyter notebook
 ```
 
 5. Before running code in a notebook, change the kernel to match the `drlnd` environment by using the drop-down `Kernel` menu. 
