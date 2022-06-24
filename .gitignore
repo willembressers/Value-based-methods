@@ -68,6 +68,10 @@ target/
 
 # VS Code
 .vscode/
+*.code-workspace
+
+# Github
+.github/
 
 # Spyder
 .spyproject/
