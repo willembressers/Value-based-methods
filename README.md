@@ -9,34 +9,31 @@
 
 This repository contains material related to Udacity's Value-based Methods course.
 
-## Table of Contents
+## Project Details
+The goal of this project is to train an reinforcement learning agent that will play a game. The goal of the game is to walk around in a 3D environment and pickup the 'yellow' bananas (and ignore the 'blue' bananas).
 
-### Tutorials
+The game's state space consists of a continuous state space of 37 dimensions.
 
-The tutorials lead you through implementing various algorithms in reinforcement learning.  All of the code is in PyTorch (v0.4) and Python 3.
+The actions space (possible actions to take) of the player is:
+- move left
+- move right
+- move forward
+- move backward
 
-* [Deep Q-Network](https://github.com/udacity/Value-based-methods/tree/main/dqn): Explore how to use a Deep Q-Network (DQN) to navigate a space vehicle without crashing.
+The game is considered solved when; the agent gets an average score of +13 over 100 consecutive episodes.
 
-### Labs / Projects
+## Getting Started
 
-The labs and projects can be found below.  All of the projects use rich simulation environments from [Unity ML-Agents](https://github.com/Unity-Technologies/ml-agents).
-
-* [Navigation](https://github.com/udacity/Value-based-methods/tree/main/p1_navigation): In the first project, you will train an agent to collect yellow bananas while avoiding blue bananas.
-
-### Resources
-
-* [Cheatsheet](https://github.com/udacity/Value-based-methods/tree/main/cheatsheet): You are encouraged to use [this PDF file](https://github.com/udacity/Value-based-methods/blob/main/cheatsheet/cheatsheet.pdf) to guide your study of reinforcement learning. 
-
-## OpenAI Gym Benchmarks
-
-### Box2d
-- `LunarLander-v2` with [Deep Q-Networks (DQN)](https://github.com/udacity/Value-based-methods/blob/main/dqn/solution/Deep_Q_Network_Solution.ipynb) | solved in 1504 episodes
-
-## Dependencies
+1. First you'll need to download the unity environment.
+- Linux: https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip
+- Mac OSX: https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip
+- Windows (32-bit): https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip
+- Windows (64-bit): https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip
+and put the file in the 'p1_navigation' folder
 
 To set up your python environment to run the code in this repository, follow the instructions below.
 
-1. Create (and activate) a new environment with Python 3.6.
+2. Create (and activate) a new environment with Python 3.6.
 
 	- __Linux__ or __Mac__: 
 	```bash
@@ -49,26 +46,32 @@ To set up your python environment to run the code in this repository, follow the
 	activate drlnd
 	```
 	
-2. Clone the repository (if you haven't already!), and navigate to the `python/` folder.  Then, install several dependencies.
+3. Clone the repository (if you haven't already!), and navigate to the `python/` folder.  Then, install several dependencies.
 ```bash
 git clone https://github.com/willembressers/Value-based-methods.git
 cd Value-based-methods/python
 pip install .
 ```
 
-3. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `drlnd` environment.  
+4. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `drlnd` environment.  
 ```bash
 python -m ipykernel install --user --name drlnd --display-name "drlnd"
 ```
-Start the notebook
+
+## Instructions
+
+1. Start the notebook
 ```bash
 cd ..
 jupyter notebook
 ```
 
-4. Before running code in a notebook, change the kernel to match the `drlnd` environment by using the drop-down `Kernel` menu. 
+2. Before running code in a notebook, change the kernel to match the `drlnd` environment by using the drop-down `Kernel` menu. 
 
 ![Kernel][image2]
+
+
+3. Now you can 'run all' cell's, which will train the agent, and once trained it will play the game (once).
 
 ## Want to learn more?
 
