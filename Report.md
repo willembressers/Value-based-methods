@@ -57,8 +57,8 @@ This network replaces the "linear" Q-table with a Q-network suitable for the con
 - i've experimented with epsilon decay functionality. in order to increase a little bit faster.
 
 ## Results
-**Training**: The agent reached the early_stopping threshold of 16.5 in 816 epsiodes
-**Inferencing**: Here is the result after training the agent: https://youtu.be/MCE3GVhhu2U
+- **Training**: The agent reached the early_stopping threshold of 16.5 in 816 epsiodes
+- **Inferencing**: Here is the result after training the agent: [youtube](https://youtu.be/MCE3GVhhu2U)
 
 ## Ideas for Future Work
 - try different DL architectures. i've now trained on a fairly simple one. but i expect that different architectures with for example convolutions could also increase the scoring
